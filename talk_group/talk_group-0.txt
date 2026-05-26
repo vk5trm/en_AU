@@ -1,1 +1,1 @@
-Local talkgroup, talk group 0
+Local talk group, talk group 0
