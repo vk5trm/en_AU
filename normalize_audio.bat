@@ -31,9 +31,7 @@ if exist "%SCRIPT_DIR%sox.exe" (
     echo Found SoX in sox subdirectory
 ) else (
     REM Try to find SoX in PATH
-    for /f "delims=" %%A in ('where sox 2^>nul') do (
-        set "SOX_PATH=%%A"
-    )
+    for /f "delims=" %%A in ('where sox 2^>nul') do set "SOX_PATH=%%A"
 )
 
 echo.
@@ -77,7 +75,7 @@ set "ERROR_FILES=0"
 
 REM Process each directory
 for %%D in (%DIRS%) do (
-    set "DIR_PATH=%BASE_DIR%%%D"
+    set "DIR_PATH=!BASE_DIR!%%D"
     
     if exist "!DIR_PATH!" (
         echo.
