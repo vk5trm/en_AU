@@ -9,7 +9,7 @@ REM ============================================================================
 setlocal enabledelayedexpansion
 
 set "SCRIPT_DIR=%~dp0"
-set "TARGET_RMS=-20"
+set "TARGET_RMS=-9"
 set "SAMPLE_RATE=16000"
 set "OUTPUT_FORMAT=16"
 
