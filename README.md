@@ -24,6 +24,40 @@ These sound files are intended to be used with SVX-Link configuration. Place the
 ## License
 
 Please refer to the LICENSE file in this repository for licensing information.
+# Online TTS Integration for SvxLink en_AU
+
+This document describes how to use the online Text-to-Speech (TTS) functionality integrated with the SvxLink sound processing system.
+
+## Overview
+
+The `tts_handler.sh` script generates audio clips from text using online TTS services or local engines, then applies the same audio processing filters used by the static sound clip system.
+
+## Installation
+
+### Prerequisites
+
+- `sox` - Sound eXchange audio tool
+- `curl` - For API requests to cloud TTS services
+- One of the following for local TTS:
+  - `espeak` - Lightweight local TTS
+  - `festival` - More advanced local TTS
+  - Or cloud API credentials for Google, Azure, or AWS
+
+### Setup Steps
+
+1. Copy `tts_handler.sh` and `tts_handler.cfg` to the sound directory
+2. Make the script executable: `chmod +x tts_handler.sh`
+3. Configure `tts_handler.cfg` with your preferred TTS provider
+
+## Configuration
+
+Edit `tts_handler.cfg` to set:
+
+### Google Cloud TTS
+```ini
+TTS_PROVIDER="google"
+GOOGLE_API_KEY="your-api-key"
+GOOGLE_LANGUAGE="en-AU"
 
 ## Contributing
 
