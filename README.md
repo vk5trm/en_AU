@@ -1,10 +1,10 @@
 # en_AU - SVX-Link English Australian TTS Audio Files
 
-Audio files for SVX-Link for English Australian language support with Text-to-Speech (TTS) capabilities.
+Audio files for SVX-Link for English Australian language support.
 
 ## Overview
-
-This repository contains audio files specifically designed for SVX-Link, providing English Australian (en_AU) language support for Text-to-Speech (TTS) applications. SVX-Link is a Linux-based amateur radio voice server that allows remote access and control of radio repeaters and other radio equipment.
+The SvxLink Server, often just called SvxLink, is a general purpose voice services system, which when connected to a transceiver, can act as both an advanced repeater system and can also operate on a simplex channel. One could call it a radio operating system.
+This repository contains audio files specifically designed for SVX-Link, providing English Australian (en_AU) language support.
 
 ## Repository Contents
 
@@ -52,7 +52,7 @@ This repository is organized into multiple branches, each containing audio files
    git checkout Google-Male
    ```
 
-3. Integrate the audio files into your SVX-Link configuration
+3. Integrate the audio files into your SVX-Link configuration by adding DEFAULT_LANG=en_AU to your repeater or simplex logic in your svxlink.conf 
 
 ## Audio File Branches
 
