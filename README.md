@@ -1,4 +1,4 @@
-# en_AU - SVX-Link English Australian TTS Audio Files
+# SVX-Link English Australian TTS Audio Files
 
 Audio files for SVX-Link for English Australian language support.
 
@@ -50,29 +50,47 @@ This repository is organized into multiple branches, each containing audio files
 
 ## Getting Started
 
-1. Clone the Repository
+### 1. Clone the Repository
    ```bash
-   cd /usr/share/svxlink/sounds
-   sudo git clone https://github.com/vk5trm/en_AU.git
+git clone https://github.com/vk5trm/en_AU.git
+   ```
+### 2. Then move the files to the SVXLink sounds directory
+   ```bash
+sudo mv en_AU /usr/share/svxlink/sounds
    ```
 
-3. Switch to your preferred branch:
-   ```bash
-   # For Google Female voice number 1
-   git checkout Google-Female-1
-   
-   # For Google Male voice number 1
-   git checkout Google-Male-1
+### 3. Switch to your preferred branch:
+ ```bash
+cd /usr/share/svxlink/sounds/en_AU
+```
+   For Google Female voice number 1
+  ```bash
+git checkout Google-Female-1
+  ```
+   For Google Male voice number 1
+  ```bash
+git checkout Google-Male-1
+  ```
+   For Google Female voice number 2
+  ```bash
+git checkout Google-Female-2
+  ```
+   For Google Male voice number 2
+  ```bash
+git checkout Google-Male-2
+  ```
 
-    # For Google Female voice number 2
-   git checkout Google-Female-2
-   
-   # For Google Male voice number 2
-   git checkout Google-Male-2
-   ```
-
-4. Integrate the audio files into your SVX-Link configuration by adding DEFAULT_LANG=en_AU to your repeater or simplex logic in your svxlink.conf 
-
+### 4a. Integrate the audio files into your SVX-Link configuration by adding this to your repeater or simplex logic in your svxlink.conf 
+ ```bash
+DEFAULT_LANG=en_AU
+ ```
+### or
+      
+### 4b. Create a link to the new directory by using
+```bash
+cd /usr/share/svxlink/sounds/
+sudo ln -s /usr/share/svxlink/sounds/en_AU en_US
+```
 ## License
 
 This project is licensed under the **GNU General Public License v2.0** - see the LICENSE file for details.
@@ -93,7 +111,7 @@ For issues or questions regarding this repository, please open an issue on GitHu
 
 ## Author
 
-**vk5trm** - Repository Owner
+**Rob vk5trm** - Repository Owner
 
 ---
 
